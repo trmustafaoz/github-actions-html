@@ -1,0 +1,26 @@
+name: Build & Deploy
+
+on:
+  push:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+  
+      - name: create .ssh directory
+        run: mkdir ~/.ssh/ && chmod 700 ~/.ssh/
+  
+      - name: install the key
+        run: echo "${{ secrets.SECRET_KEY }}" > ~/.ssh/mustafaozdev && chmod 600 ~/.ssh/mustafaozdev
+          
+      - name: create KNOWN_HOSTS
+        run: echo "${{ secrets.KNOWN_HOSTS }}" > ~/.ssh/known_hosts
+
+      - name: deploy the mustafaoz.dev
+        run: ssh -i ~/.ssh/mustafaozdev dev@164.92.196.182
