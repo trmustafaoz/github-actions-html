@@ -23,4 +23,4 @@ jobs:
         run: echo "${{ secrets.KNOWN_HOSTS }}" > ~/.ssh/known_hosts
 
       - name: deploy the mustafaoz.dev
-        run: ssh -i ~/.ssh/mustafaozdev dev@164.92.196.182
+        run: ssh -i ~/.ssh/mustafaozdev dev@mustafaoz.dev
