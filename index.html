@@ -1,79 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <title>Mustafa Öz</title>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mustafa Öz</title>
+    <!-- bootstrap@5.2.0-beta1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+      rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+  </head>
+  <body>
     <nav class="container navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="/blog/" rel="home"> /home/mustafaoz</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">                
-                <li class="nav-item"><a class="nav-link" href="#">About me</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://twitter.com/trmustafaoz/" rel="me">Tweets</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://github.com/trmustafaoz/" rel="me">GitHub</a></li>
-            </ul>
-        </div>
+      <a class="navbar-brand" href="#" rel="home" title="Goes to the home page">
+        <!--<img src="/img/LOGO-mustafaozdev.png" 
+          alt="LOGO" width="40" 
+          height="40" 
+          class="d-inline-block align-top">
+        </img>-->
+        /home/mustafaoz
+      </a>
+      <button 
+        class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#toggleMobileMenu" 
+          aria-controls="#toggleMobileMenu" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="toggleMobileMenu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#" title="About me">About me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" title="Contact me">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://twitter.com/trmustafaoz/" target="_blank" rel="me" title="Twitter">Tweets</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://github.com/trmustafaoz/" target="_blank" rel="me" title="GitHub">GitHub</a></li>
+        </ul>
+      </div>
     </nav>
-
     <article class="about-me">
-        <div class="jumbotron jumbotron-fluid mb-0">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h1 class="display-3"> Hi, I'm Mustafa!</h1>
-                    </div>
-                </div> 
+      <div class="jumbotron jumbotron-fluid mb-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 mb-2 mt-5">
+              <h1 class="display-3">Hi, I'm Mustafa!</h1>
             </div>
+          </div> 
         </div>
-
-        <div class="container apply-footer">
-            <div class="row">
-                <div class="col-12 col-lg-9">
-                    <h2>About me</h2>
-                    <p>
-                        I am currently a student of <a href="https://en.wikipedia.org/wiki/Management_information_system">Management Information Systems</a>.
-                        <br>In addition to my learning, I am currently interested in <a href="https://flutter.dev/">Flutter</a>&<a href="https://dart.dev/">Dart</a>. 
-                            <br>I want to improve myself in <a href="https://flutter.dev/multi-platform/mobile">Cross-Platform</a> and 
-                                <a href="https://dev.java/evolution/">Native</a> fields and to be included in the Mobile Application Ecosystem.
-                    </p>
-                    
-                    <p>
-                        In 2018, I started my education in <a href="https://en.wikipedia.org/wiki/Computer_programming">Computer Programming</a> at <a href="http://iro.akdeniz.edu.tr/">Akdeniz University</a>, 
-                        department of <a href="http://teknik.akdeniz.edu.tr/bilgisayar-teknolojileri/bilgisayar-teknolojileri-bolumleri/bilgisayar-programciligi/">Information Technologies</a>.
-                    </p>
-
-                    <ul>
-                        <li><a href="https://twitter.com/trmustafaoz/" target="_blank">Follow me <b>on Twitter</b></a></li>
-                        <li><a href="https://github.com/trmustafaoz/" target="_blank">Browse my projects <b>on GitHub</b></a></li>
+      </div>    
+      <div class="container apply-footer">
+        <div class="row">
+          <div class="col-12 col-lg-12">
+            <h2>About me</h2>
+              <p class="lead">I am currently a student of <a href="https://en.wikipedia.org/wiki/Management_information_system" target="_blank" title="Management Information Systems in Wikipedia">Management Information Systems</a>.
+                <br>In addition to my learning, I am currently interested in <a href="https://flutter.dev/" target="_blank" title="Official Flutter Website">Flutter</a>&<a href="https://dart.dev/" target="_blank" title="Official Dart-Lang Website">Dart</a>. 
+                  <br>I want to improve myself in <a href="https://flutter.dev/multi-platform/mobile" target="_blank" title="Cross-Platform Mobile Development">Cross-Platform</a> and 
+                    <a href="https://dev.java/evolution/" target="_blank" title="Native Mobile Development">Native</a> fields and to be included in the <strong>mobile application ecosystem</strong>.
+              </p>                  
+              <p>
+                In 2018, I started my education in <a href="https://en.wikipedia.org/wiki/Computer_programming" target="_blank" title="Computer Programming in Wikipedia">Computer Programming</a> at <a href="http://iro.akdeniz.edu.tr/" target="_blank" title="Akdeniz University International Relations Office">Akdeniz University</a>, 
+                  department of <a href="http://teknik.akdeniz.edu.tr/bilgisayar-teknolojileri/bilgisayar-teknolojileri-bolumleri/bilgisayar-programciligi/" target="_blank" title="Official Akdeniz University Website of Computer Programming">Information Technologies</a>. I graduated in 2020.
+              </p>
+              <ul>
+                <li><a href="https://twitter.com/trmustafaoz/" target="_blank" title="Follow me on Twitter!">Follow me <b>on Twitter</b></a></li>
+                <li><a href="https://github.com/trmustafaoz/" target="_blank" title="My Projects on GitHub">Browse my projects <b>on GitHub</b></a></li>
+              </ul>
+              <div class="article-list d-md-block">
+                <h3>Recent articles on blog</h3>
+                  <h4><small class="special-time-title">18 July 2022, Monday:</small></h4>
+                    <ul>                           
+                      <li>I published my <a href="https://mustafaoz.dev/" title="Welcome to My Website!">personal website</a>.</li>
                     </ul>
-
-                    <div class="article-list d-none d-md-block">
-                        <h2>Recent articles on blog</h2>
-                        <ul>                            
-                            <li>Monday, 18 July 2022: I published my <a href="https://mustafaoz.dev/">personal website</a>.</li>
-                        </ul>
-                    </div>
-                    
-                    <h2>Contact</h2>
-                    <p>
-                        Best way to get a hold of me is to DM me <a href="https://twitter.com/trmustafaoz/"><b>on Twitter</b></a>. 
-                        <br> If that doesn't work out, email me at address <a href="mailto:contact@mustafaoz.dev"><b>contact@mustafaoz.dev</b></a>
-                    </p>
-                </div>
-            </div>
-        </div>
+              </div>                  
+            <h2>Contact</h2>
+              <p>
+                Best way to get a hold of me is to<mark>DM me on Twitter</mark><a href="https://twitter.com/trmustafaoz/" target="_blank" title="DM me on Twitter!"><b>on Twitter</b></a>.
+                  If that <strong>doesn't work out</strong>, email me at address <a href="mailto:contact@mustafaoz.dev" title="E-mail me!"><b>contact@mustafaoz.dev</b></a>.                            
+              </p>           
+          </div>
+        </div> 
+      </div>
     </article>
-
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
+      crossorigin="anonymous">
+    </script>
+  </body>
 </html>
