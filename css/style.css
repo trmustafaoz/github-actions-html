@@ -10,7 +10,7 @@ p strong {
     width: 20px;
     height: 20px;
     position: relative;
-    transition: .5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 .navbar-toggler,
@@ -38,7 +38,7 @@ p strong {
     opacity: 1;
     left: 0;
     transform: rotate(0deg);
-    transition: .25s ease-in-out;
+    transition: 0.25s ease-in-out;
 }
 
 .middle-bar {
