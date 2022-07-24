@@ -10,7 +10,7 @@ p strong {
     width: 20px;
     height: 20px;
     position: relative;
-    transition: 0.5s ease-in-out;
+    transition: .5s ease-in-out;
 }
 
 .navbar-toggler,
@@ -38,7 +38,7 @@ p strong {
     opacity: 1;
     left: 0;
     transform: rotate(0deg);
-    transition: 0.25s ease-in-out;
+    transition: .25s ease-in-out;
 }
 
 .middle-bar {
@@ -46,7 +46,8 @@ p strong {
 }
 
 
-/* state when the navbar is collapsed */
+/* State when the navbar is collapsed */
+
 .navbar-toggler.collapsed .top-bar {
     position: absolute;
     top: 0px;
@@ -84,7 +85,7 @@ p strong {
     transform: rotate(-135deg);
 }
 
-/* color of 3 lines */
+/* Color of 3 lines */
 
 .navbar-toggler.collapsed .toggler-icon {
     background: linear-gradient( 263deg, rgba(252,74,74,1) 0%, rgba(0,212,255,1) 100% );
