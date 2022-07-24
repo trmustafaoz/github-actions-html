@@ -46,8 +46,7 @@ p strong {
 }
 
 
-/* State when the navbar is collapsed */
-
+/* state when the navbar is collapsed */
 .navbar-toggler.collapsed .top-bar {
     position: absolute;
     top: 0px;
@@ -68,7 +67,6 @@ p strong {
 }
 
 /* when navigation is clicked */
-
 .navbar-toggler .top-bar {
     top: inherit;
     transform: rotate(135deg);
@@ -85,8 +83,7 @@ p strong {
     transform: rotate(-135deg);
 }
 
-/* Color of 3 lines */
-
+/* color of 3 lines */
 .navbar-toggler.collapsed .toggler-icon {
     background: linear-gradient( 263deg, rgba(252,74,74,1) 0%, rgba(0,212,255,1) 100% );
 }
