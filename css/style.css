@@ -1,3 +1,7 @@
+.container {
+    max-width: 1080px;
+}
+
 p, small.special-title {
     font-weight: 300;
 }
@@ -81,3 +85,5 @@ p strong {
 .navbar-toggler.collapsed .toggler-icon {
     background: linear-gradient( 263deg, rgba(252,74,74,1) 0%, rgba(0,212,255,1) 100% );
 }
+
+/* twitter message button */
