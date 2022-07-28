@@ -14,7 +14,7 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 px-3 p-lg-0 pt-lg-4 fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light text-dark py-3 px-3 p-lg-0 pt-lg-4 fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#about-me" title="Goes to the home page">/home/mustafaoz</a>
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,8 +25,8 @@
 
         <div class="collapse navbar-collapse" id="navmenu">
           <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" aria-current="page" href="#" title="About me">About me</a></li>
-            <li class="nav-item"><a class="nav-link" href="#" title="Contact me">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="#about-me" title="About me">About me</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact" title="Contact me">Contact</a></li>
             <li class="nav-item"><a class="nav-link" href="https://twitter.com/trmustafaoz/" target="_blank" rel="me" title="Twitter">Tweets</a></li>
             <li class="nav-item"><a class="nav-link" href="https://github.com/trmustafaoz/" target="_blank" rel="me" title="GitHub">GitHub</a></li>
           </ul>
@@ -35,11 +35,11 @@
     </nav>
 
     <!-- about-me -->
-    <section class="bg-light text-dark py-5 px-3 p-lg-0 pt-lg-5">
+    <section class="bg-light text-dark py-5 px-3 p-lg-0 pt-lg-5" id="about-me">
       <div class="container">
         <div class="d-sm-flex align-items-center justify-content-between">
           <div>
-            <h1 class="display-3" title="Hi, I am Mustafa!">Hi, I am <span class="text-warning">Mustafa!</span></h1>
+            <h1 class="display-3" title="Hi, I am Mustafa!">Hi, I am <span class="text-primary">Mustafa!</span></h1>
             <p class="lead">
               I am currently a student of <a href="https://en.wikipedia.org/wiki/Management_information_system" target="_blank" title="Management Information Systems in Wikipedia">Management Information Systems ↗</a>.
                 <br>In addition to my learning, I am currently interested in <a href="https://flutter.dev/" target="_blank" title="Official Flutter Website">Flutter &#x2197;</a> & <a href="https://dart.dev/" target="_blank" title="Official Dart-Lang Website">Dart &#x2197;</a>. 
@@ -56,9 +56,8 @@
     </section>
 
     <!-- social boxes -->
-    <section class="p-3 bg-light text-dark">
+    <section class="p-3 bg-light text-light">
       <div class="container">
-        
         <div class="row g-4">
           <h2 class="p-3">on <span class="text-primary">Social Media</span></h2>
           <div class="col-md">
@@ -68,23 +67,19 @@
                   <i class="bi bi-twitter"></i>
                 </div>
                 <h3 class="card-title mb-3">Twitter</h3>
-                <p class="card-text">
-                  Stay in touch on Twitter
-                </p>
-                  <a href="https://twitter.com/trmustafaoz?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="true"> Follow @trmustafaoz</a>
+                <p class="card-text">Stay in touch on Twitter</p>
+                <a href="https://twitter.com/trmustafaoz?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="true"> Follow @trmustafaoz</a>
               </div>
             </div>
           </div>
           <div class="col-md">
-            <div class="card bg-secondary text-light">
+            <div class="card bg-secondary text-dark">
               <div class="card-body text-center">
                 <div class="h1 mb-3">
                   <i class="bi bi-github"></i>
                 </div>
                 <h3 class="card-title mb-3">GitHub</h3>
-                <p class="card-text">
-                  Browse My Projects on GitHub
-                </p>
+                <p class="card-text">Browse My Projects on GitHub</p>
                 <a class="github-button" href="https://github.com/trmustafaoz" data-color-scheme="no-preference: dark; light: light; dark: dark;" data-size="large" data-show-count="true" aria-label="Follow @trmustafaoz on GitHub" title="Follow @trmustafaoz on GitHub" target="_blank"> Follow @trmustafaoz</a>
               </div>
             </div>
@@ -94,29 +89,18 @@
     </section>
 
     <!-- question Accordion -->
-    <section id="questions" class="p-5 bg-light text-dark">
+    <section id="contact" class="p-5 bg-light text-dark">
       <div class="container">
         <h2 class="mb-4">Frequently Asked Questions</h2>
         <div class="accordion accordion-flush" id="questions">
           <!-- Item 1 -->
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button 
-                class="accordion-button collapsed bg-light text-dark"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#question-one"
-                aria-expanded="false" aria-label="Toggle accordion"
-              >How can you contact me?
-              </button>
+              <button class="accordion-button collapsed bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#question-one" aria-expanded="false" aria-label="Toggle accordion">How can you contact me?</button>
             </h2>
             <div id="question-one" class="accordion-collapse collapse bg-light text-dark" data-bs-parent="#questions">
-              <div class="accordion-body">
-                Best way to get a hold of me is to DM me on 
-                  <a href="https://twitter.com/messages/compose?recipient_id=1108415399660523520" 
-                    class="twitter-dm-button" data-size="large" data-screen-name="@trmustafaoz" 
-                      title="Follow @trmustafaoz on Twitter"  aria-label="Follow @trmustafaoz on Twitter" 
-                        target="_blank">DM @trmustafaoz</a>
+              <div class="accordion-body">Best way to get a hold of me is to DM me on 
+                <a href="https://twitter.com/messages/compose?recipient_id=1108415399660523520" class="twitter-dm-button" data-size="large" data-screen-name="@trmustafaoz" title="Follow @trmustafaoz on Twitter"  aria-label="Follow @trmustafaoz on Twitter" target="_blank">DM @trmustafaoz</a>
               </div>    
             </div>
           </div>
@@ -124,19 +108,13 @@
           <!-- Item 2 -->
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed bg-light text-dark"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#question-two"
-              >
+              <button class="accordion-button collapsed bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#question-two">
                 If Twitter DM does not work out
               </button>
             </h2>
             <div id="question-two" class="accordion-collapse collapse bg-light text-dark" data-bs-parent="#questions">
-              <div class="accordion-body">
-                Email me at address <a class="contact-mail-button" href="mailto:contact@mustafaoz.dev" 
-                  title="Email to me!">contact@mustafaoz.dev</a>
+              <div class="accordion-body">Email me at address 
+                <a class="contact-mail-button" href="mailto:contact@mustafaoz.dev" title="Email to me!">contact@mustafaoz.dev</a>
               </div>
             </div>
           </div>
@@ -157,8 +135,8 @@
     <!-- Bootstrap -- JavaScript -->
     <script src="bootstrap.min.js"></script>
     <!-- Github JavaScript -- Place this tag in your head or just before your close body tag. -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script async defer src="buttons-github-io-buttons.js"></script>
     <!-- Twitter Button's JavaScript -->
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script async src="platform-twitter-com-widgets.js" charset="utf-8"></script>
   </body>
 </html>
