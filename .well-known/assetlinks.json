@@ -1,1 +1,14 @@
-
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "dev.mustafaoz.info",
+      "sha256_cert_fingerprints": [
+        "51:C9:D5:D9:DC:05:AB:54:E2:20:5C:CB:78:71:0A:A8:9C:4A:40:A1:08:0E:36:1A:4C:42:32:3F:F9:47:D6:6A"
+      ]
+    }
+  }
+]
